@@ -205,12 +205,89 @@ section {
   font-size: 1.3rem;
 }
 
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  position: relative;
+}
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color: rgb(224, 54, 82);
+  background-color: rgba(205, 198, 198, 0.507);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+.products .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+.products .box-container .box .image img {
+  height: 20rem;
+}
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.products .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.products .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+.products .box-container .box .image .icons a {
+  height: 50%;
+  line-height: 5rem;
 
-
-
-
-
+  font-size: 2rem;
+  width: 50%;
+  background: rgb(205, 96, 114);
+  color: white;
+}
+.products .box-container .box .image .icons a:hover {
+  background: #333;
+}
+.products .box-container .box .image .icons .cart-btn {
+  border-left: 0.1rem solid rgba(255, 255, 255, 0.093);
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.174);
+  width: 100%;
+}
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: rgb(191, 73, 93);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
 
 
 
